@@ -1,0 +1,11 @@
+<Project>
+    <!-- Custom Variables -->
+    <PropertyGroup>
+        <PluginDirectory>F:\AppData\Roaming\r2modmanPlus-local\LethalCompany\profiles\development\BepInEx\plugins\</PluginDirectory>
+    </PropertyGroup>
+
+    <!-- Copy to Plugin Directory for Quicker Testing -->
+    <Target Name="CopyFiles" AfterTargets="PostBuildEvent">
+        <Copy SourceFiles="$(TargetPath)" DestinationFolder="$(PluginDirectory)"/>
+    </Target>
+</Project>
